@@ -1,0 +1,8 @@
+<div class="alert alert-primary text-center" role="alert" *ngIf="show">
+  {{'autoRefresh' | translate: lang}} {{timeInSeconds}} {{'second' | translate: lang}}
+ <div class="refreshActions buttonsContainer">
+   <button type="button" class="btn btn-primary zoomIn" (click)="autoRefreshEvent('cancel')">{{'cancel' | translate: lang}}</button>
+   <button type="button" class="btn btn-primary zoomIn" (click)="autoRefreshEvent('refresh')">{{'refresh' | translate: lang}}</button>
+   <button type="button" class="btn btn-primary zoomIn" (click)="autoRefreshEvent('close')">{{'close' | translate: lang}}</button>
+ </div>
+</div>
